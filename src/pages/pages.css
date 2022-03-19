@@ -1,0 +1,94 @@
+.login {
+  background-image: url(../img/bg-inicial.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.game {
+  background-image: url(../img/bg-game.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+
+.div-questions {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.App-logo {
+  height: 220px;
+  pointer-events: none;
+}
+
+.btn-play:disabled {
+  background-color:#4506CB;
+  color: white;
+  opacity: 0.6;
+}
+
+.btn-config {
+  background-color: #312C4D;
+}
+
+.btn:hover {
+  background-color: #392369;
+}
+
+.hidden {
+  display: none;
+}
+
+.showButton {
+  display: block;
+}
+
+.red-border {
+  border: 3px solid red;
+}
+
+.green-border {
+  border: 3px solid rgb(6, 240, 15);
+}
+
+.btn-answers {
+  background: linear-gradient(180.24242815132618deg, rgba(221, 232, 237,1) -0.4534700315457414%,rgba(212, 224, 230,1) -0.08215036803364928%,rgba(0, 53, 79,1) 17.92685331230284%,rgba(0, 65, 98,1) 28.138144058885388%,rgba(0, 83, 125,1) 42.43395110410094%,rgba(3, 106, 158,1) 65.82708990536278%,rgba(0, 141, 210,1) 88.66324921135646%);
+}
+
+.btn-answers:disabled {
+  color: white ;
+  opacity: 0.6;
+}
+
+.btn-next {
+  background-color: #00354f;
+}
+
+.btn-next:hover {
+  background-color: #00537d;
+}
+
+.success{
+  background-image: url(../img/bg-success.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.fail {
+  background-image: url(../img/bg-fail.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.div-header {
+  border-bottom: ridge 5px #636FA4;
+  background-color:rgba(115, 115, 115, 0.4);
+}
+
+.feedback-text {
+  background-color:rgba(115, 115, 115, 0.4);
+  padding: 10px;
+}
