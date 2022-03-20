@@ -92,3 +92,10 @@
   background-color:rgba(115, 115, 115, 0.4);
   padding: 10px;
 }
+
+.notFound {
+  background-image: url(../img/bg-notFound.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
