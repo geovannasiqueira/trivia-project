@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './pages.css'
 
 class NotFound extends Component {
+  homePage = () => {
+    const { history } = this.props;
+    history.push('/');
+  }
+
   render() {
     return (
       <div className='notFound flex justify-center'>
@@ -13,10 +18,10 @@ class NotFound extends Component {
         <button
               type="button"
               data-testid="btn-play-again"
-              onClick={ this.playAgain }
+              onClick={ this.homePage }
               className="btn btn-answers btn-wide "
             >
-              Play Again
+              Home Page
             </button>
         </div>
       </div>

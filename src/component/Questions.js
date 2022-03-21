@@ -43,7 +43,6 @@ class Questions extends React.Component {
   sunScore = (target) => {
     const { saveScoreGlobal } = this.props;
     const { countDown, index, arrQuestions } = this.state;
-    console.log(arrQuestions);
     const NUMBER_TEN = 10;
     const NUMBER_THREE = 3;
     if (target.id === 'correct') {

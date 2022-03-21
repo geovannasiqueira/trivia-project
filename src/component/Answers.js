@@ -6,8 +6,6 @@ class Answers extends React.Component {
     super();
     this.state = {
       alternativesArr: [],
-      // green: '',
-      // red: '',
     };
     this.creatButtons = this.creatButtons.bind(this);
   }

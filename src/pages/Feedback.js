@@ -5,10 +5,13 @@ import HeaderGame from '../component/HeaderGame';
 import { clearScore } from '../redux/action';
 
 class Feedback extends React.Component {
-  playAgain = () => {
-    const { history, finishGame } = this.props;
-    history.push('/');
+  componentWillUnmount() {
+    const { finishGame } = this.props;
     finishGame();
+  }
+  playAgain = () => {
+    const { history } = this.props;
+    history.push('/');
   }
   render() {
     const { assertions, score, history } = this.props;
@@ -17,7 +20,7 @@ class Feedback extends React.Component {
       <div className={ ( assertions < minAssertions ) ? 'fail' : 'success' }>
         <HeaderGame />
         <div className="flex flex-col items-center mt-40 text-5xl font-bold">
-        <div className="feedback-text w-">
+        <div className="feedback-text w-2/5">
         <h3
           data-testid="feedback-text"
         >
@@ -31,7 +34,7 @@ class Feedback extends React.Component {
               type="button"
               data-testid="btn-play-again"
               onClick={ this.playAgain }
-              className="btn mx-2"
+              className="btn mx-2 btn-answers btn-wide"
             >
               Play Again
             </button>
@@ -39,7 +42,7 @@ class Feedback extends React.Component {
               type="button"
               data-testid="btn-ranking"
               onClick={ () => history.push( '/ranking' ) }
-              className="btn"
+              className="btn btn-answers btn-wide"
             >
               Ranking
             </button>
